@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BS
 {
-	static class GenerateTexture
+	public static class GenerateTexture
 	{
 		public static Texture2D Rectangle(GraphicsDevice graphicsDevice, Rectangle rect, Color color)
 		{
