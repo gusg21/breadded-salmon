@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_b_s_testing_1_1_program" kind="class" prot="public">
+    <compoundname>BSTesting::Program</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_b_s_testing_1_1_program_1afb56dda158d6b96a1f1bdd795c2faf2f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void BSTesting.Program.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <briefdescription>
+<para>The main entry point for the application. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Program.cs" line="14" column="1" bodyfile="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Program.cs" bodystart="14" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The main class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Program.cs" line="9" column="1" bodyfile="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Program.cs" bodystart="8" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_b_s_testing_1_1_program_1afb56dda158d6b96a1f1bdd795c2faf2f" prot="public" virt="non-virtual"><scope>BSTesting::Program</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

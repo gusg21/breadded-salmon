@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_b_s_testing_1_1_game1" kind="class" prot="public">
+    <compoundname>BSTesting::Game1</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Game</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_b_s_testing_1_1_game1_1a202cdb04ff8e1438018da82eba324f3c" prot="private" static="no" mutable="no">
+        <type>GraphicsDeviceManager</type>
+        <definition>GraphicsDeviceManager BSTesting.Game1.graphics</definition>
+        <argsstring></argsstring>
+        <name>graphics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" line="12" column="1" bodyfile="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_b_s_testing_1_1_game1_1a888f390ac8e0b2c57f5d90e64402c10b" compoundref="_game1_8cs" startline="15" endline="19">BSTesting.Game1.Game1</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_s_testing_1_1_game1_1aa0d449e061b84797702f7177efbb6031" prot="private" static="no" mutable="no">
+        <type>SpriteBatch</type>
+        <definition>SpriteBatch BSTesting.Game1.spriteBatch</definition>
+        <argsstring></argsstring>
+        <name>spriteBatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" line="13" column="1" bodyfile="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_b_s_testing_1_1_game1_1a49032b49010b5c83b4a142088c91eb8a" compoundref="_game1_8cs" startline="38" endline="44">BSTesting.Game1.LoadContent</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_b_s_testing_1_1_game1_1a888f390ac8e0b2c57f5d90e64402c10b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BSTesting.Game1.Game1</definition>
+        <argsstring>()</argsstring>
+        <name>Game1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" line="15" column="1" bodyfile="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" bodystart="15" bodyend="19"/>
+        <references refid="class_b_s_testing_1_1_game1_1a202cdb04ff8e1438018da82eba324f3c" compoundref="_game1_8cs" startline="12">BSTesting.Game1.graphics</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_b_s_testing_1_1_game1_1ac2e9666cea3a595f690e934668463495" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void BSTesting.Game1.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+<para>Allows the game to perform any initialization it needs to before starting to run. This is where it can query for any required services and load any non-graphic related content. Calling base.Initialize will enumerate through any components and initialize them as well. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" line="27" column="1" bodyfile="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" bodystart="27" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_testing_1_1_game1_1a49032b49010b5c83b4a142088c91eb8a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void BSTesting.Game1.LoadContent</definition>
+        <argsstring>()</argsstring>
+        <name>LoadContent</name>
+        <briefdescription>
+<para>LoadContent will be called once per game and is the place to load all of your content. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" line="38" column="1" bodyfile="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" bodystart="38" bodyend="44"/>
+        <references refid="class_b_s_testing_1_1_game1_1aa0d449e061b84797702f7177efbb6031" compoundref="_game1_8cs" startline="13">BSTesting.Game1.spriteBatch</references>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_testing_1_1_game1_1aef77ba320dcb52b51dd18cf21d465fbb" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void BSTesting.Game1.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>UnloadContent will be called once per game and is the place to unload game-specific content. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" line="50" column="1" bodyfile="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_testing_1_1_game1_1a8c832edc7af71ee775695832ced3b81e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void BSTesting.Game1.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Allows the game to run logic such as updating the world, checking for collisions, gathering input, and playing audio. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provides a snapshot of timing values.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" line="60" column="1" bodyfile="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_testing_1_1_game1_1a7725fa62772c4383c1a41064305c6ba7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void BSTesting.Game1.Draw</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>This is called when the game should draw itself. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provides a snapshot of timing values.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" line="74" column="1" bodyfile="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" bodystart="74" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the main type for your game. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>BSTesting.Game1</label>
+        <link refid="class_b_s_testing_1_1_game1"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Game</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>BSTesting.Game1</label>
+        <link refid="class_b_s_testing_1_1_game1"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Game</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" line="11" column="1" bodyfile="C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting/Game1.cs" bodystart="10" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_b_s_testing_1_1_game1_1a7725fa62772c4383c1a41064305c6ba7" prot="protected" virt="non-virtual"><scope>BSTesting::Game1</scope><name>Draw</name></member>
+      <member refid="class_b_s_testing_1_1_game1_1a888f390ac8e0b2c57f5d90e64402c10b" prot="public" virt="non-virtual"><scope>BSTesting::Game1</scope><name>Game1</name></member>
+      <member refid="class_b_s_testing_1_1_game1_1a202cdb04ff8e1438018da82eba324f3c" prot="private" virt="non-virtual"><scope>BSTesting::Game1</scope><name>graphics</name></member>
+      <member refid="class_b_s_testing_1_1_game1_1ac2e9666cea3a595f690e934668463495" prot="protected" virt="non-virtual"><scope>BSTesting::Game1</scope><name>Initialize</name></member>
+      <member refid="class_b_s_testing_1_1_game1_1a49032b49010b5c83b4a142088c91eb8a" prot="protected" virt="non-virtual"><scope>BSTesting::Game1</scope><name>LoadContent</name></member>
+      <member refid="class_b_s_testing_1_1_game1_1aa0d449e061b84797702f7177efbb6031" prot="private" virt="non-virtual"><scope>BSTesting::Game1</scope><name>spriteBatch</name></member>
+      <member refid="class_b_s_testing_1_1_game1_1aef77ba320dcb52b51dd18cf21d465fbb" prot="protected" virt="non-virtual"><scope>BSTesting::Game1</scope><name>UnloadContent</name></member>
+      <member refid="class_b_s_testing_1_1_game1_1a8c832edc7af71ee775695832ced3b81e" prot="protected" virt="non-virtual"><scope>BSTesting::Game1</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_f50842052252bdc03cd72f3fb5173e67" kind="dir">
+    <compoundname>C:/Users/gus/Documents/C#/BreaddedSalmon</compoundname>
+    <innerdir refid="dir_fa380dfbd865ba75bbf4d773a663c0f1">C:/Users/gus/Documents/C#/BreaddedSalmon/BreaddedSalmon</innerdir>
+    <innerdir refid="dir_1134bd957996d4e49ae0f362e7c1df96">C:/Users/gus/Documents/C#/BreaddedSalmon/BSTesting</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/gus/Documents/C#/BreaddedSalmon/"/>
+  </compounddef>
+</doxygen>
