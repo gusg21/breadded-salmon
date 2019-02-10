@@ -54,8 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BSGame.cs" />
+    <Compile Include="FancyCamera.cs" />
+    <Compile Include="FancyRandom.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="GameObjectGroup.cs" />
+    <Compile Include="GameState.cs" />
     <Compile Include="GenerateTexture.cs" />
     <Compile Include="MotionGameObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
