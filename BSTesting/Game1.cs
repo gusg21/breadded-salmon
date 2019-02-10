@@ -1,6 +1,8 @@
-﻿using Microsoft.Xna.Framework;
+﻿using BS;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Diagnostics;
 
 namespace BSTesting
 {
@@ -11,11 +13,17 @@ namespace BSTesting
 	{
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
+		GameObjectGroup objects;
 
 		public Game1()
 		{
 			graphics = new GraphicsDeviceManager (this);
+
 			Content.RootDirectory = "Content";
+			Global.content = Content;
+
+			objects = new GameObjectGroup ();
+			objects.Add (new Player ());
 		}
 
 		/// <summary>
@@ -63,6 +71,7 @@ namespace BSTesting
 				Exit ();
 
 			// TODO: Add your update logic here
+			objects.Update (gameTime);
 
 			base.Update (gameTime);
 		}
@@ -75,7 +84,14 @@ namespace BSTesting
 		{
 			GraphicsDevice.Clear (Color.CornflowerBlue);
 
+			Debug.WriteLine ("Draw g");
+
 			// TODO: Add your drawing code here
+			spriteBatch.Begin ();
+
+			objects.Draw (spriteBatch);
+
+			spriteBatch.End ();
 
 			base.Draw (gameTime);
 		}
