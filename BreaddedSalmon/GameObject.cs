@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -8,12 +9,19 @@ using System.Threading.Tasks;
 
 namespace BS
 {
-	public abstract class GameObject
+	public class GameObject
 	{
 		public bool alive = true;
 		public bool exists = true;
 
-		public abstract void Update(GameTime gameTime);
-		public abstract void Draw(SpriteBatch batch);
+		public float depth = 0F;
+
+
+		public virtual void LoadContent(ContentManager content)
+		{
+			Console.WriteLine ("Load Content Base");
+		}
+		public virtual void Update(GameTime gameTime) { }
+		public virtual void Draw(SpriteBatch batch) { }
 	}
 }
