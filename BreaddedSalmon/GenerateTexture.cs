@@ -106,7 +106,9 @@ namespace BS
         {
             int width = array.GetLength(0);
             int height = array.GetLength(1);
+
             byte[,] output = new byte[width * 4, height];
+
             int i = 0;
             for (int row = 0; row < height; row++)
             {
@@ -118,6 +120,7 @@ namespace BS
                     output[x * 4 + 3, row] = array[x, row].A;
                 }
             }
+
             return output;
         }
         public static Texture2D RoundedRectangle(GraphicsDevice graphicsDevice, Color color, int width, int height, double radius)
