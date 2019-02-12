@@ -11,28 +11,28 @@ namespace BS
 {
 	public class GameState
 	{
-		public BSGame Parent;
-
-		protected GameObjectGroup objects = new GameObjectGroup();
-		public FancyCamera camera;
-
-		public virtual void LoadContent(ContentManager content)
-		{
-			objects.LoadContent (content);
-
-			camera = new FancyCamera (Parent.GraphicsDevice);
-		}
+		public string ID = "unknown";
+		public StateManager Parent;
 
 		public virtual void Update(GameTime gameTime)
 		{
-			objects.Update (gameTime);
-
-			camera.Update (gameTime);
 		}
 
 		public virtual void Draw(SpriteBatch batch)
 		{
-			objects.Draw (batch);
+		}
+
+		public virtual void Enter(string from)
+		{
+		}
+
+		public virtual void Leave(string to)
+		{
+		}
+
+		public void SwitchState(string to)
+		{
+			Parent.SwitchState (to);
 		}
 	}
 }
