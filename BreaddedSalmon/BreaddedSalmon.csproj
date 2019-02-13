@@ -38,9 +38,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aether.Physics2D, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\GrapplingHookGame\packages\Aether.Physics2D.1.4.0\lib\net40\Aether.Physics2D.dll</HintPath>
-    </Reference>
     <Reference Include="MonoGame.Extended, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\GrapplingHookGame\packages\MonoGame.Extended.1.1.0\lib\portable-net45+win8+wpa81\MonoGame.Extended.dll</HintPath>
     </Reference>
@@ -60,8 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Camera.cs" />
-    <Compile Include="FancyRandom.cs" />
+    <Compile Include="BreaddedCamera.cs" />
+    <Compile Include="BreaddedJukebox.cs" />
+    <Compile Include="BreaddedRandom.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="GameObjectGroup.cs" />
     <Compile Include="GameState.cs" />

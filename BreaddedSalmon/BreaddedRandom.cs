@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace BS
 {
-	public class FancyRandom : Random
+	public class BreaddedRandom : Random
 	{
 		#region Singleton
-		private static FancyRandom instance = null;
+		private static BreaddedRandom instance = null;
 		private static readonly object padlock = new object ();
 
-		public static FancyRandom Instance
+		public static BreaddedRandom Instance
 		{
 			get
 			{
@@ -20,7 +20,7 @@ namespace BS
 				{
 					if (instance == null)
 					{
-						instance = new FancyRandom ();
+						instance = new BreaddedRandom ();
 					}
 					return instance;
 				}

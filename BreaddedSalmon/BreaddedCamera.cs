@@ -2,7 +2,7 @@
 
 namespace BS
 {
-	public class Camera
+	public class BreaddedCamera
 	{
 		public Matrix Transform
 		{
@@ -41,7 +41,7 @@ namespace BS
 			}
 		}
 
-		public Camera(int viewportWidth, int viewportHeight)
+		public BreaddedCamera(int viewportWidth, int viewportHeight)
 		{
 			ViewportWidth = viewportWidth;
 			ViewportHeight = viewportHeight;

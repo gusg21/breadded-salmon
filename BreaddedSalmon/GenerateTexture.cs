@@ -5,8 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Dynamics;
 
 namespace BS
 {
@@ -33,13 +31,6 @@ namespace BS
 			ret.SetData (colors);
 
 			return ret;
-		}
-
-		public static Texture2D FromBody(GraphicsDevice graphics, Body body, Color color)
-		{
-			AABB aabb;
-			body.FixtureList [0].GetAABB (out aabb, 0);
-			return Rectangle (graphics, new Rectangle (body.Position.ToPoint (), aabb.Extents.ToPoint ()), color);
 		}
 
 		static double Distance(double x1, double y1, double x2, double y2)
