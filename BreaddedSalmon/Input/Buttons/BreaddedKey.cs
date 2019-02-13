@@ -53,11 +53,11 @@ namespace BS.Key
             return null;
 
         }
-        public void Update(GameTime gameTime, KeyboardState state)
+        public void Update(GameTime gameTime)
         {
 
             prevState = currState;
-            currState = state.IsKeyDown(key);
+            currState = Keyboard.GetState().IsKeyDown(key);
         }
         public override bool Pressed()
         {
