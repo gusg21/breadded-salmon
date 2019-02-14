@@ -1,7 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Media;
-using MonoGame.Extended;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -75,7 +74,7 @@ namespace BS
 
 		public void Update(GameTime gameTime)
 		{
-			fadeTimeLeft -= gameTime.GetElapsedSeconds ();
+			fadeTimeLeft -= (float)gameTime.ElapsedGameTime.TotalSeconds;
 			if (fadeTimeLeft < 0)
 			{ }
 			fadeTimeLeft = (fadeTimeLeft < 0) ? 0 : fadeTimeLeft;
