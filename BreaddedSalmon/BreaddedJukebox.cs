@@ -46,6 +46,17 @@ namespace BS
                 layer.Value.Update(gameTime);
             }
         }
+        public void Dispose()
+        {
+            foreach (KeyValuePair<string, AudioLayer> layer in audioLayers)
+            {
+                layer.Value.Dispose();
+            }
+        }
+        public void PartysOver()
+        {
+            Dispose();
+        }
     }
 
     public class AudioLayer
@@ -69,6 +80,12 @@ namespace BS
             currentSong.Play();
         }
 
+        public void Dispose()
+        {
+            currentSong.Dispose();
+            oldSong.Dispose();
+        }
+
         public void FadeTo(SoundEffect to, float duration)
         {
             fadeTimeLeft = duration;
@@ -86,7 +103,7 @@ namespace BS
             if (fadeTimeLeft < 0)
             {
                 fadeTimeLeft = 0;
-                if(oldSong != null) oldSong.Stop();
+                if(oldSong != null) oldSong.Stop()
             }
             fadeTimeLeft = (fadeTimeLeft < 0) ? 0 : fadeTimeLeft;
             if (currentSong != null)
