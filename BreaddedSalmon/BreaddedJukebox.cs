@@ -103,7 +103,7 @@ namespace BS
             if (fadeTimeLeft < 0)
             {
                 fadeTimeLeft = 0;
-                if(oldSong != null) oldSong.Stop()
+                if (oldSong != null) oldSong.Stop();
             }
             fadeTimeLeft = (fadeTimeLeft < 0) ? 0 : fadeTimeLeft;
             if (currentSong != null)
