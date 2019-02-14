@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BS.Input
 {
-    class BreaddedButton : BreaddedInput
+    public class BreaddedButton : BreaddedInput
     {
         public List<BreaddedInput> targets;
         private float firstRepeatDelay;
