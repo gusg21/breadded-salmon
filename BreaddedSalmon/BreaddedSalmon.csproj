@@ -67,7 +67,10 @@
     <Compile Include="GameState.cs" />
     <Compile Include="GameSubState.cs" />
     <Compile Include="GenerateTexture.cs" />
+    <Compile Include="Graphics\BreaddedSprite.cs" />
+    <Compile Include="Graphics\BreaddedTileSet.cs" />
     <Compile Include="Input\Axis\BreaddedAxis.cs" />
+    <Compile Include="Input\Axis\BreaddedGamepadAxis.cs" />
     <Compile Include="Input\Buttons\BreaddedGamepadButton.cs" />
     <Compile Include="Input\Buttons\BreaddedInput.cs" />
     <Compile Include="Input\Buttons\BreaddedButton.cs" />

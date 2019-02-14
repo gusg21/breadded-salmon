@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using BS.Input;
 
-namespace BS.Key
+namespace BS.Input
 {
-    class BreaddedKey : BreaddedInput
+    public class BreaddedKey : BreaddedInput
     {
         public Keys key;
         char? norm;
@@ -21,7 +21,7 @@ namespace BS.Key
         public bool isReleased = false;
 
 
-        public BreaddedKey(Keys key, char? norm, char? shift = null, char? mod = null)
+        public BreaddedKey(Keys key, char? norm = null, char? shift = null, char? mod = null)
         {
             this.key = key;
             this.norm = norm;
@@ -53,7 +53,7 @@ namespace BS.Key
             return null;
 
         }
-        public void Update(GameTime gameTime)
+        public override void Update(GameTime gameTime)
         {
 
             prevState = currState;

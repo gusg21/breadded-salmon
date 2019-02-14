@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BS.Input
 {
-    abstract class BreaddedInput
+    public abstract class BreaddedInput
     {
         public virtual void Update(GameTime gameTime)
         {
