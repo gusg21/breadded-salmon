@@ -7,7 +7,11 @@ using Microsoft.Xna.Framework;
 
 namespace BS.Input
 {
+<<<<<<< HEAD
     class BreaddedVirtualAxis : BreaddedGenericAxis
+=======
+    public class BreaddedVirtualAxis : BreaddedAxis
+>>>>>>> fa093c181f670e8b6e683d6b87e42c7ca8c0637f
     {
         BreaddedButton highButton;
         BreaddedButton lowButton;
@@ -24,11 +28,13 @@ namespace BS.Input
             this.lowValue = lowValue;
             this.both = both;
         }
+
         public override void Update(GameTime gameTime)
         {
             highButton.Update(gameTime);
             lowButton.Update(gameTime);
         }
+
         public override float Get()
         {
             if(highButton.Check() && lowButton.Check())

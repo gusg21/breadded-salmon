@@ -2,10 +2,6 @@
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace BS
 {
@@ -80,7 +76,7 @@ namespace BS
 
 		public void Draw(SpriteBatch batch)
 		{
-			Console.WriteLine (TransformMatrix == null ? "null" : TransformMatrix.ToString());
+			Console.WriteLine (TransformMatrix == null ? "null" : TransformMatrix.ToString ());
 
 			if (TransformMatrix == null)
 				batch.Begin (samplerState: samplerState);
