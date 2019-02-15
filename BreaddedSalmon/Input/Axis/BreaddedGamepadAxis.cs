@@ -8,11 +8,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace BS.Input.Axis
 {
-<<<<<<< HEAD
     class BreaddedGamepadAxis : BreaddedGenericAxis
-=======
-    public class BreaddedGamepadAxis : BreaddedAxis
->>>>>>> fa093c181f670e8b6e683d6b87e42c7ca8c0637f
     {
         public enum AXES
         {
