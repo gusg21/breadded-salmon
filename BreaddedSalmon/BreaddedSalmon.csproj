@@ -57,8 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Audio\BreaddedSFX.cs" />
     <Compile Include="BreaddedCamera.cs" />
-    <Compile Include="BreaddedJukebox.cs" />
+    <Compile Include="Audio\BreaddedJukebox.cs" />
     <Compile Include="BreaddedRandom.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="GameObjectGroup.cs" />
@@ -67,7 +68,7 @@
     <Compile Include="GenerateTexture.cs" />
     <Compile Include="Graphics\BreaddedSprite.cs" />
     <Compile Include="Graphics\BreaddedTileSet.cs" />
-    <Compile Include="Input\Axis\BreaddedAxis.cs" />
+    <Compile Include="Input\Axis\BreaddedGenericAxis.cs" />
     <Compile Include="Input\Axis\BreaddedGamepadAxis.cs" />
     <Compile Include="Input\Buttons\BreaddedGamepadButton.cs" />
     <Compile Include="Input\Buttons\BreaddedInput.cs" />

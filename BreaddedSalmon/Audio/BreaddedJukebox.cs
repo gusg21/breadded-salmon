@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Audio;
 using System.Collections.Generic;
 
-namespace BS
+namespace BS.Audio
 {
 	public class BreaddedJukebox
 	{
