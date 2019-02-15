@@ -57,7 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Audio\BreaddedSoundEffectManager.cs" />
+    <Compile Include="Audio\BreaddedSFX.cs" />
     <Compile Include="BreaddedCamera.cs" />
     <Compile Include="Audio\BreaddedJukebox.cs" />
     <Compile Include="BreaddedRandom.cs" />

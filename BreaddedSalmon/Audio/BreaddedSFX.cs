@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace BS.Audio
 {
-    class BreaddedSoundEffectManager
+    public class BreaddedSFX
     {
         public Dictionary<string, SoundEffect> sounds;
-        public BreaddedSoundEffectManager()
+        public BreaddedSFX()
         {
             sounds = new Dictionary<string, SoundEffect>();
         }
