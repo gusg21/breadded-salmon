@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace BS.Input
 {
-    class BreaddedVirtualAxis : BreaddedAxis
+    class BreaddedVirtualAxis : BreaddedGenericAxis
     {
         BreaddedButton highButton;
         BreaddedButton lowButton;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BS.Input
 {
-    abstract class BreaddedAxis
+    abstract class BreaddedGenericAxis
     {
         public virtual void Update(GameTime gameTime)
         {

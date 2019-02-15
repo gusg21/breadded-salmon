@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BS
+namespace BS.Audio
 {
     public class BreaddedJukebox
     {
@@ -67,6 +67,8 @@ namespace BS
         public float currentFadeDuration = 0f;
         public string name;
 
+        public float volume = 1;
+
         public AudioLayer(string name)
         {
             this.name = name;
@@ -77,7 +79,13 @@ namespace BS
             if (currentSong != null)
                 currentSong.Stop();
             currentSong = song.CreateInstance();
+            currentSong.Volume = volume;
             currentSong.Play();
+        }
+
+        public void SetVolume(float volume)
+        {
+            this.volume = volume;
         }
 
         public void Dispose()
@@ -93,7 +101,7 @@ namespace BS
             oldSong = currentSong;
             currentSong = to.CreateInstance();
             currentSong.Volume = 0f;
-            oldSong.Volume = 1f;
+            oldSong.Volume = volume;
             currentSong.Play();
         }
 
@@ -108,11 +116,11 @@ namespace BS
             fadeTimeLeft = (fadeTimeLeft < 0) ? 0 : fadeTimeLeft;
             if (currentSong != null)
             {
-                currentSong.Volume = MathHelper.Lerp(1, 0, fadeTimeLeft / currentFadeDuration);
+                currentSong.Volume = MathHelper.Lerp(volume, 0, fadeTimeLeft / currentFadeDuration);
             }
             if (oldSong != null)
             {
-                oldSong.Volume = MathHelper.Lerp(0, 1, fadeTimeLeft / currentFadeDuration);
+                oldSong.Volume = MathHelper.Lerp(0, volume, fadeTimeLeft / currentFadeDuration);
 
             }
         }
