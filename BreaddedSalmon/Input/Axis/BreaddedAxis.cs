@@ -1,18 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BS.Input
 {
-    abstract class BreaddedAxis
-    {
-        public virtual void Update(GameTime gameTime)
-        {
+	public abstract class BreaddedAxis
+	{
+		public virtual void Update(GameTime gameTime)
+		{
 
-        }
-        public abstract float Get();
-    }
+		}
+
+		public abstract float Get();
+	}
 }

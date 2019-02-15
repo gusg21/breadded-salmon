@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace BS.Input.Axis
 {
-    class BreaddedGamepadAxis : BreaddedAxis
+    public class BreaddedGamepadAxis : BreaddedAxis
     {
         public enum AXES
         {
@@ -25,6 +25,7 @@ namespace BS.Input.Axis
         {
             base.Update(gameTime);
         }
+
         public override float Get()
         {
             if (axis == AXES.LEFTX)
