@@ -38,7 +38,7 @@ namespace BS.Graphics
 
 		public void Draw(SpriteBatch batch, int x, int y)
 		{
-			tileset.Draw (batch, x, y, (int) Math.Floor(currentFrame + frames.Min));
+			tileset.Draw (batch, x, y, (int) Math.Floor(currentFrame + frames.Min));;
 		}
     }
 }
