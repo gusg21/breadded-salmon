@@ -14,8 +14,10 @@ namespace BS.Input.Axis
         {
             LEFTX, LEFTY, RIGHTX, RIGHTY, LEFT_TRIGGER, RIGHT_TRIGGER
         }
+
         Axes axis;
         int gamepadID;
+
         public BreaddedGamepadAxis(Axes axis, int gamepadID)
         {
             this.axis = axis;
@@ -52,6 +54,7 @@ namespace BS.Input.Axis
             {
                 return GamePad.GetState(gamepadID).Triggers.Right;
             }
+
             return 0;
         }
     }

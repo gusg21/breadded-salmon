@@ -39,9 +39,14 @@ namespace BS.Graphics
 
         }
 
+		public Rectangle GetTileRectangle(int index)
+		{
+			return new Rectangle (index % TilesPer * TileWidth, (int) Math.Ceiling ((double) (index / TilesPer)), TileWidth, TileHeight);
+		}
+
         public void Draw(SpriteBatch batch, int x, int y, int index)
         {
-            batch.Draw(tex, new Vector2(x, y), new Rectangle(index % TilesPer * TileWidth, (int)Math.Ceiling((double)(index / TilesPer)), TileWidth, TileHeight), Color.White, 0, center, 0, SpriteEffects.None, Depth);
+            batch.Draw(tex, new Vector2(x, y), GetTileRectangle(index), Color.White, 0, center, 0, SpriteEffects.None, Depth);
         }
     }
 }
