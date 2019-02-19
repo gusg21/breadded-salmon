@@ -7,11 +7,11 @@ namespace BS
 {
 	public class StateManager
 	{
-		public Dictionary<string, GameState> states = new Dictionary<string, GameState> ();
+		public Dictionary<string, GameSubState> states = new Dictionary<string, GameSubState> ();
 		public Dictionary<string, GameSubState> substates = new Dictionary<string, GameSubState> ();
 
 		private string currentStateId;
-		public GameState CurrentState
+		public GameSubState CurrentState
 		{
 			get
 			{
@@ -39,7 +39,7 @@ namespace BS
 		public Matrix? TransformMatrix;
 		public SamplerState samplerState = SamplerState.PointClamp;
 
-		public StateManager(Dictionary<string, GameState> states, string initial, Dictionary<string, GameSubState> substates)
+		public StateManager(Dictionary<string, GameSubState> states, string initial, Dictionary<string, GameSubState> substates)
 		{
 			this.states = states;
 			this.substates = substates;

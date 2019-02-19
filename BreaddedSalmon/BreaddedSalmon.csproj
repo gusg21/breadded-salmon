@@ -61,6 +61,8 @@
     <Compile Include="BreaddedCamera.cs" />
     <Compile Include="Audio\BreaddedJukebox.cs" />
     <Compile Include="BreaddedRandom.cs" />
+    <Compile Include="Debug\BreaddedDebugCommand.cs" />
+    <Compile Include="Debug\DebugState.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="GameObjectGroup.cs" />
     <Compile Include="GameState.cs" />

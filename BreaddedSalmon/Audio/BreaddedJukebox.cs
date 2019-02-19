@@ -19,6 +19,10 @@ namespace BS.Audio
 		{
 			audioLayers.Add (name, new AudioLayer (name));
 		}
+        public void StopLayer(string layerName)
+        {
+            audioLayers[layerName].currentSong.Stop();
+        }
 
 		public void AddSong(SoundEffect song, string songName)
 		{
@@ -55,6 +59,10 @@ namespace BS.Audio
 		{
 			Dispose ();
 		}
+        public void SetLooping(bool looping, string layerName)
+        {
+            audioLayers[layerName].SetLooping(looping);
+        }
 	}
 
 	public class AudioLayer
@@ -64,6 +72,7 @@ namespace BS.Audio
 		public float fadeTimeLeft = -1f;
 		public float currentFadeDuration = 0f;
 		public string name;
+        public bool looping;
 
 		public AudioLayer(string name)
 		{
@@ -110,6 +119,7 @@ namespace BS.Audio
 			if (currentSong != null)
 			{
 				currentSong.Volume = MathHelper.Lerp (1, 0, fadeTimeLeft / currentFadeDuration);
+                currentSong.IsLooped = looping;
 			}
 
 			if (oldSong != null)
@@ -117,6 +127,11 @@ namespace BS.Audio
 				oldSong.Volume = MathHelper.Lerp (0, 1, fadeTimeLeft / currentFadeDuration);
 
 			}
+            
 		}
+        public void SetLooping(bool looping)
+        {
+            this.looping = looping;
+        }
 	}
 }

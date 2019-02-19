@@ -9,8 +9,20 @@ namespace BS.Input
 
 		}
 
-		public abstract bool Pressed();
-		public abstract bool Released();
-		public abstract bool Check();
+		public virtual bool Pressed()
+        {
+            return false;
+
+        }
+        public virtual bool Released()
+        {
+            return false;
+
+        }
+        public virtual bool Check()
+        {
+            return false;
+        }
+
 	}
 }
