@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq; 
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using System;
+using System.Collections.Generic;
 
 namespace BS
 {
@@ -34,7 +31,7 @@ namespace BS
 
 		public void Sort()
 		{
-			children.Sort (new Comparison<GameObject>(DepthSort));
+			children.Sort (new Comparison<GameObject> (DepthSort));
 		}
 
 		public new void LoadContent(ContentManager content)

@@ -10,13 +10,13 @@ namespace BS.Input.Axis
 {
     class BreaddedGamepadAxis : BreaddedGenericAxis
     {
-        public enum AXES
+        public enum Axes
         {
             LEFTX, LEFTY, RIGHTX, RIGHTY, LEFT_TRIGGER, RIGHT_TRIGGER
         }
-        AXES axis;
+        Axes axis;
         int gamepadID;
-        public BreaddedGamepadAxis(AXES axis, int gamepadID)
+        public BreaddedGamepadAxis(Axes axis, int gamepadID)
         {
             this.axis = axis;
         }
@@ -28,27 +28,27 @@ namespace BS.Input.Axis
 
         public override float Get()
         {
-            if (axis == AXES.LEFTX)
+            if (axis == Axes.LEFTX)
             {
                 return GamePad.GetState(gamepadID).ThumbSticks.Left.X;
             }
-            else if (axis == AXES.LEFTY)
+            else if (axis == Axes.LEFTY)
             {
                 return GamePad.GetState(gamepadID).ThumbSticks.Left.Y;
             }
-            else if (axis == AXES.RIGHTX)
+            else if (axis == Axes.RIGHTX)
             {
                 return GamePad.GetState(gamepadID).ThumbSticks.Right.X;
             }
-            else if (axis == AXES.RIGHTY)
+            else if (axis == Axes.RIGHTY)
             {
                 return GamePad.GetState(gamepadID).ThumbSticks.Right.Y;
             }
-            else if (axis == AXES.LEFT_TRIGGER)
+            else if (axis == Axes.LEFT_TRIGGER)
             {
                 return GamePad.GetState(gamepadID).Triggers.Left;
             }
-            else if (axis == AXES.RIGHT_TRIGGER)
+            else if (axis == Axes.RIGHT_TRIGGER)
             {
                 return GamePad.GetState(gamepadID).Triggers.Right;
             }
