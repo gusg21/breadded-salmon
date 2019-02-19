@@ -67,7 +67,7 @@
     <Compile Include="Routing\GameState.cs" />
     <Compile Include="Routing\GameSubState.cs" />
     <Compile Include="GenerateTexture.cs" />
-    <Compile Include="Graphics\BreaddedSprite.cs" />
+    <Compile Include="Graphics\BreaddedAnimation.cs" />
     <Compile Include="Graphics\BreaddedTileSet.cs" />
     <Compile Include="Input\Axis\BreaddedGenericAxis.cs" />
     <Compile Include="Input\Axis\BreaddedGamepadAxis.cs" />

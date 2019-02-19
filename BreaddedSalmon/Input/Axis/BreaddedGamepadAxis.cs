@@ -16,11 +16,12 @@ namespace BS.Input.Axis
         }
 
         Axes axis;
-        int gamepadID;
+        PlayerIndex gamepadID;
 
-        public BreaddedGamepadAxis(Axes axis, int gamepadID)
+        public BreaddedGamepadAxis(Axes axis, PlayerIndex gamepadID)
         {
             this.axis = axis;
+			this.gamepadID = gamepadID;
         }
 
         public override void Update(GameTime gameTime)

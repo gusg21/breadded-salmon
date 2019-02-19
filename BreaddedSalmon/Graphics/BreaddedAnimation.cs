@@ -32,7 +32,7 @@ namespace BS.Graphics
 
 		public void Update(GameTime gameTime)
 		{
-			currentFrame += framesPerSecond;
+			currentFrame += framesPerSecond * gameTime.GetElapsedSeconds();
 			currentFrame = currentFrame % (frames.Max - frames.Min);
 		}
 

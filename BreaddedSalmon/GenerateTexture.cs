@@ -107,8 +107,7 @@ namespace BS
 			int height = array.GetLength (1);
 
 			byte [,] output = new byte [width * 4, height];
-
-			int i = 0;
+			
 			for (int row = 0; row < height; row++)
 			{
 				for (int x = 0; x < width; x++)
