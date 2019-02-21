@@ -14,11 +14,14 @@ namespace BS.Input.Axis
         {
             LEFTX, LEFTY, RIGHTX, RIGHTY, LEFT_TRIGGER, RIGHT_TRIGGER
         }
+
         Axes axis;
-        int gamepadID;
-        public BreaddedGamepadAxis(Axes axis, int gamepadID)
+        PlayerIndex gamepadID;
+
+        public BreaddedGamepadAxis(Axes axis, PlayerIndex gamepadID)
         {
             this.axis = axis;
+			this.gamepadID = gamepadID;
         }
 
         public override void Update(GameTime gameTime)
@@ -52,6 +55,7 @@ namespace BS.Input.Axis
             {
                 return GamePad.GetState(gamepadID).Triggers.Right;
             }
+
             return 0;
         }
     }

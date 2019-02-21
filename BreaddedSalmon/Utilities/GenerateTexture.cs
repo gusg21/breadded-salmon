@@ -107,8 +107,7 @@ namespace BS
 			int height = array.GetLength (1);
 
 			byte [,] output = new byte [width * 4, height];
-
-			int i = 0;
+			
 			for (int row = 0; row < height; row++)
 			{
 				for (int x = 0; x < width; x++)
@@ -254,6 +253,29 @@ namespace BS
 		{
 			return RoundedRectangle (graphicsDevice, color, rectangle.Width, rectangle.Height, radius);
 		}
-	}
+
+        public static Color[,] ConvertRawTextureTo2DColorArray(byte[] bytes, int width)
+        {
+            Color[,] toOut = new Color[width, (bytes.Length / 4) / width];
+            for (int i = 0; i < bytes.Length / 4; i += 1)
+            {
+                Color c = new Color();
+                c.R = bytes[i * 4];
+                c.G = bytes[i * 4 + 1];
+                c.B = bytes[i * 4 + 2];
+                c.A = bytes[i * 4 + 3];
+                toOut[i % width, (int)Math.Floor((double)(bytes.Length / 4) / width)] = c;
+            }
+            return toOut;
+        }
+        public static Texture2D Crop(Texture2D texture, int x1, int y1, int x2, int y2)
+        {
+            Texture2D toOut = new Texture2D(texture.GraphicsDevice, Math.Abs(x1-x2), Math.Abs(y1-y2));
+            Color[] raw = new Color[Math.Abs(x1 - x2) * Math.Abs(y1 - y2)];
+            texture.GetData<Color>(raw,x1 + y1 * texture.Width, Math.Abs(x1 - x2) + Math.Abs(y1 - y2) * texture.Width);
+            toOut.SetData<Color>(raw);
+            return toOut;
+        }
+    }
 }
 
