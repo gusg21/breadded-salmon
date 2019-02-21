@@ -28,14 +28,13 @@ namespace BS.Particles
         BreaddedParticleType deathParticle = null;
 
         Color color;
-        List<Texture2D> textures; 
-        List<BreaddedAnimation>
+        List<Texture2D> textures;
+        List<BreaddedAnimation> animations;
 
         public BreaddedParticleType(float scale, float speed, float direction, float gravity, float rotation, float spin, float life, Color color, BreaddedParticleType deathParticle = null)
         {
             this.deathParticle = deathParticle;
             this.color = color;
-            this.texture = texture;
         }
 
         public void Create(BreaddedParticle Particle, Vector2 position, float direction , Color color)
