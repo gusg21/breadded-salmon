@@ -13,10 +13,7 @@ namespace BS
 		public float depth = 0F;
 
 
-		public virtual void LoadContent(ContentManager content)
-		{
-			Console.WriteLine ("Load Content Base");
-		}
+		public virtual void LoadContent(ContentManager content) { }
 		public virtual void Update(GameTime gameTime) { }
 		public virtual void Draw(SpriteBatch batch) { }
 	}

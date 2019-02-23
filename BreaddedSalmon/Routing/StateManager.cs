@@ -84,8 +84,6 @@ namespace BS
 
 		public RenderTarget2D Draw()
 		{
-			Console.WriteLine (TransformMatrix == null ? "null" : TransformMatrix.ToString ());
-
 			graphics.SetRenderTarget (renderTarget);
 
 			if (TransformMatrix == null)

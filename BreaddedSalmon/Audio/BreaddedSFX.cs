@@ -10,6 +10,7 @@ namespace BS.Audio
     public class BreaddedSFX
     {
         public Dictionary<string, SoundEffect> sounds;
+
         public BreaddedSFX()
         {
             sounds = new Dictionary<string, SoundEffect>();
