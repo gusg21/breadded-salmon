@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 
 namespace BS
 {
@@ -28,7 +29,12 @@ namespace BS
 		private Vector2 InternalPosition = new Vector2 (8, 8);
 		private Vector2 PositionOffset = Vector2.Zero;
 
-		public int ViewportWidth;
+        public void MoveTo(Vector2 vector2)
+        {
+            InternalPosition = vector2;
+        }
+
+        public int ViewportWidth;
 		public int ViewportHeight;
 
 		public float Rotation = 0f;

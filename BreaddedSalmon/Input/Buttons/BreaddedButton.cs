@@ -21,6 +21,9 @@ namespace BS.Input
         {
             targets = new List<BreaddedInput>(_targets);
         }
+        public BreaddedButton(BreaddedInput input) : this(new List<BreaddedInput> { input })
+        {
+        }
 
         public void Add(List<BreaddedInput> toAdd)
         {

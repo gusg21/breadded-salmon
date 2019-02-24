@@ -19,7 +19,7 @@ namespace BS.Input
 			this.checkMouse = checkMouse;
 		}
 
-		public void Update(GameTime gameTime)
+		public override void Update(GameTime gameTime)
 		{
 			prevState = state;
 			state = Mouse.GetState ();
