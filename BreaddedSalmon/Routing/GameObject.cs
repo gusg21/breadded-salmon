@@ -12,6 +12,7 @@ namespace BS
 
 		public float depth = 0F;
 
+		public GameObjectGroup Parent;
 
 		public virtual void LoadContent(ContentManager content) { }
 		public virtual void Update(GameTime gameTime) { }

@@ -9,10 +9,17 @@ namespace BS
 	public class GameObjectGroup : GameObject
 	{
 		public List<GameObject> children = new List<GameObject> ();
+		public GameState Parent;
+
+		public GameObjectGroup(GameState parent)
+		{
+			Parent = parent;
+		}
 
 		public void Add(GameObject child)
 		{
 			children.Add (child);
+			child.Parent = this;
 		}
 
 		internal int DepthSort(GameObject a, GameObject b)
