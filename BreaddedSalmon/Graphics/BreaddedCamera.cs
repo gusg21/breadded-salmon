@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 
 namespace BS
 {
@@ -51,6 +52,16 @@ namespace BS
 		{
 			ViewportWidth = viewportWidth;
 			ViewportHeight = viewportHeight;
+		}
+
+		public Vector2 MouseToWorld(MouseState mouse)
+		{
+			return MouseToWorld (mouse.Position.ToVector2());
+		}
+
+		public Vector2 MouseToWorld(Vector2 mouse)
+		{
+			return mouse / zoom;
 		}
 	}
 }

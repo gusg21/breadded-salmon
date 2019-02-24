@@ -8,6 +8,9 @@ namespace BS.Menu
 {
 	public class Menu : GameObjectGroup
 	{
-		
+		public Menu(GameState parent) : base(parent)
+		{
+
+		}
 	}
 }
